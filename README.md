@@ -1,16 +1,35 @@
-# Produzione Borse
+# Produzione Borse - Documentazione
 
-## Descrizione del Progetto
-**Autore:** Alessio Santoni  
-**Data:** 14/11/2025  
+## Titolo
+Produzione Borse con Thread in Java
 
-Questo progetto simula un piccolo processo produttivo utilizzando il multithreading in Java. La produzione delle borse è divisa in due fasi principali:  
+## Data
+13 Novembre 2025
 
-- **Taglio del tessuto**  
-- **Cucitura delle borse**
+## Autore
+Santoni Alessio
 
-Ogni fase è gestita da un thread dedicato, che lavora in parallelo per rappresentare una catena di produzione semplice ma realistica.  
+## Descrizione
+Questo progetto simula la produzione di borse utilizzando due thread Java:
+- `TagliatoreBorse`: si occupa di tagliare il tessuto.
+- `CucitoreBorse`: si occupa di cucire le borse.
+Entrambi i thread vengono eseguiti in parallelo e il programma principale attende il loro completamento prima di terminare.
 
-Il programma avvia entrambi i thread, attende il loro completamento tramite `join()` e comunica quando tutte le operazioni sono terminate.
+## Versione
+1.0.0
 
-Questo esempio è utile per comprendere il funzionamento base dei thread in Java, la simulazione dei tempi di lavoro tramite `sleep()` e il coordinamento tra processi concorrenti.
+## Tecnologie Utilizzate
+- Java SE 8 o superiore
+- Threading in Java
+
+## Funzionalità Principali
+1. Simulazione del taglio del tessuto delle borse con ritardo di 1 secondo.
+2. Simulazione della cucitura delle borse con ritardo di 1,5 secondi.
+3. Esecuzione parallela dei thread per ottimizzare i tempi.
+4. Gestione delle eccezioni `InterruptedException`.
+
+## Istruzioni per l’Esecuzione
+1. Compilare tutte le classi Java:  
+   ```bash
+   javac TagliatoreBorse.java CucitoreBorse.java ProduzioneBorse.java
+
